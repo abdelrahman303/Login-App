@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="shortcut icon" href="user.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-screen h-screen bg-[#24353F] flex justify-center items-center ">
+        <div class=" p-10 mx-auto shadow-2xl text-cyan-600 w-[800px]">
+            <div class=" mx-auto">
+                <div class="text-center mb-6">
+                    <h2 class="text-3xl md:text-4xl ">Smart Register System</h2>
+                </div>
+                <form onsubmit="register(event)">
+                    <div class="mb-3">
+                        <input
+                            class="inline-block w-full px-4 py-3 leading-6 text-lg bg-[#24353F] text-gray-200 placeholder-gray-500 border-2 border-gray-500 rounded shadow focus:border-cyan-600 focus:outline-none"
+                            type="text" placeholder="Enter your name" id="registerName">
+                    </div>
+                    <div class="mb-3">
+                        <input
+                            class="inline-block w-full px-4 py-3 leading-6 text-lg bg-[#24353F] text-gray-200 placeholder-gray-500 border-2 border-gray-500 rounded shadow focus:border-cyan-600 focus:outline-none"
+                            type="email" placeholder="Enter your email" id="registerEmail">
+                    </div>
+                    <div class="mb-6">
+                        <input
+                            class="inline-block w-full  px-4 py-3 leading-6 text-lg bg-[#24353F] text-gray-200 placeholder-gray-500 border-2 border-gray-500 rounded shadow focus:border-cyan-600 focus:outline-none"
+                            type="password" placeholder="Enter your password" id="registerPassword">
+                    </div>
+                    <P id="message" class="text-center mb-3"></P>
+                    <button id="registerButton" type="submit"
+                        class="px-6 py-2 mb-5 min-w-[120px] w-full text-center bg-[#24353F] text-cyan-600 border border-cyan-600 rounded hover:bg-cyan-600 hover:text-white active:bg-cyan-600 focus:outline-none focus:ring">
+                        Sign up
+                    </button>
+                </form>
+            </div>
+            <p class="text-center text-gray-200">You have an account?<a class="text-cyan-600 pl-1 hover:underline"
+                    href="index.html">Sign in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
